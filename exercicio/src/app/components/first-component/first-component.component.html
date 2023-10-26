@@ -1,0 +1,29 @@
+<div class="fundo">
+    <div class="container">
+        <div class="Calculadora">
+            <div>
+                <input type="text" class="resultado" value="{{displayValue}}" disabled />
+                <button class="numerosCalcac" (click)="clear()">AC</button>   
+                <button class="numerosCalcp" (click)="display('.')">.</button>    
+                <button class="operador" (click)="display('+')">&plus;</button>                            
+    
+                <button class="numerosCalc" (click)="display('7')">7</button>
+                <button class="numerosCalc" (click)="display('8')">8</button>
+                <button class="numerosCalc" (click)="display('9')">9</button> 
+                <button class="operador" (click)="display('/')">&divide;</button>
+                
+                <button class="numerosCalc" (click)="display('4')">4</button>
+                <button class="numerosCalc" (click)="display('5')">5</button>
+                <button class="numerosCalc" (click)="display('6')">6</button>
+                <button class="operador" (click)="display('*')">&times;</button>
+                 
+                <button class="numerosCalc" (click)="display('1')">1</button>
+                <button class="numerosCalc" (click)="display('2')">2</button>
+                <button class="numerosCalc" (click)="display('3')">3</button>    
+                <button class="operador" (click)="display('-')">&minus;</button>    
+                <button class="numerosCalc0" (click)="display('0')">0</button>                                  
+                <button class="igual" (click)="calcular()">=</button> 
+            </div>
+        </div>
+    </div>
+</div>
